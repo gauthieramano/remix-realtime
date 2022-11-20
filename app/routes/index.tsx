@@ -1,11 +1,10 @@
-import { Link, useFetcher, useNavigate } from "@remix-run/react";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useFetcher, useLoaderData, useNavigate } from "@remix-run/react";
 import classNames from "classnames";
 import { useEffect, useRef } from "react";
 
-import { getIssues } from "../data";
-import type { Issue } from "../data";
 import * as AmalgoBox from "../amalgo-box.client";
+import type { Issue } from "../data";
+import { getIssues } from "../data";
 import icons from "../icons.svg";
 
 export function loader() {
