@@ -4,6 +4,7 @@ import { hydrateRoot } from "react-dom/client";
 
 const hydrate = () =>
   startTransition(() =>
+    // @ts-ignore
     hydrateRoot(
       document,
       <StrictMode>
